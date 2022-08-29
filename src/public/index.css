@@ -1,0 +1,35 @@
+.videos video {
+  background-color: #333;
+  border-radius: 2rem;
+  border: 2px solid white;
+  width: 50%;
+  max-width: 400px;
+  min-width: 180px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.videos {
+  background-color: #999;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#connection-indicator {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.waiting {
+  background-color: rgb(216, 70, 70);
+}
+
+.ready {
+  background-color: rgb(2, 123, 40);
+}

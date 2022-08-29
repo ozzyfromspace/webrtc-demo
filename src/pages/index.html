@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../index.js" type="module" defer></script>
+    <link rel="stylesheet" href="../index.css" />
+    <title>WebRTC Demo</title>
+  </head>
+  <body>
+    <h1><span id="connection-indicator" class="waiting"></span> WebRTC Demo</h1>
+    <p>Username: <span id="local-username"></span></p>
+    <form>
+      <input type="text" placeholder="user to call" id="remote-username" />
+      <button type="submit" id="call-button">Call</button>
+    </form>
+    <div class="videos">
+      <video autoplay muted id="local-video"></video>
+      <video autoplay muted id="remote-video"></video>
+    </div>
+  </body>
+</html>
