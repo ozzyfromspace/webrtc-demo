@@ -12,14 +12,15 @@ const port = 3000;
 
 const db = new TestDB();
 
-const publicPath = path.join(__dirname, 'public');
+const publicPath = path.join(__dirname, '../public');
+console.log(publicPath);
 app.use(express.json());
 app.use(express.static(publicPath));
 
 server.listen(port, () => console.log(`🚀 ${port}!`));
 
 app.get('/', (_, res) => {
-  const homePath = path.join(__dirname, 'pages', 'index.html');
+  const homePath = path.join(__dirname, '../pages', 'index.html');
   res.sendFile(homePath);
 });
 
